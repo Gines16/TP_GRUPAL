@@ -1,12 +1,201 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="icon" href="static/img/favicon.ico">
+    <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <title>CompuCodo</title>
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- vinculación fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <p>Esta es la pagina principal</p>
+
+    <!-- Encabezado -->
+    <header class="header">
+
+        <nav>
+            <!-- Logo -->
+            <div id="logo">
+                <a href=".">
+                
+            
+                    
+                    <img src="/static/img/compu1.png" width="55px" height="40px" ><span class="logo-text"></span>
+                </a>
+                
+            </div>
+
+            <section id="search" class="container">
+                <input type="text" class="input-search" placeholder="Buscar...">
+            </section>
+            <!-- hipervínculos del menú -->
+            <ul class="nav-links">
+                <li><a href="#popular">Mis Compras</a></li>
+                <li><a href="./templates/register.html" class="btn-cac">Registrarse</a></li>
+                <li>
+                    <a href="./templates/login.html">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">Iniciar Sesión</span>
+                        
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido -->
+    <main>
+
+        
+            
+            <div class="card-banner container"> <h1>Encontrá lo que estás buscando</h1>
+                
+                <video src="./static/img/compuc1.mp4" autoplay muted loop>    
+                    
+                </video> 
+                <section id="banner" class="d-flex">
+                    <section id="top-rated">
+        
+                        <!-- División contenedora del titulo
+                           e imagenes -->
+                           <div class="container">
+                           
+                               
+                               <div id="list-top-rated" class="elec-scroller">
+                               
+                                   
+                                   <!-- Catalogo 01 -->
+                                   <div class="elec-item-v2" > 
+                                       <div class="wrapper"> 
+                                           <a href="./templates/detail-elec.html">
+                                           <img src="./static/img/tv-1.png" alt="" class="elec-item-img-v2">
+                                           
+                                       </div>
+                                   </a>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Televisores</p>
+                                           
+                                       </div>
+                                   </div>
+           
+                                  <!-- Catalogo 02 -->
+                                   <div class="elec-item-v2" >
+                                       <div class="wrapper">
+                                           <a href="./templates/detail-elec.html">
+                                           <img src="./static/img/cel-1.png" alt="" class="elec-item-img-v2">
+                                       </div>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Celulares</p>
+                                       </div>
+                                   </a>
+                                   </div>
+           
+                                   <!-- Catalogo 03 -->
+                                   <div class="elec-item-v2" >
+                                       <div class="wrapper">
+                                           <a href="./templates/detail-elec.html">
+                                           <img src="./static/img/cocina-1.png" alt="" class="elec-item-img-v2">
+                                       </div>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Cocinas eléctricas</p>                                 
+                                       </div>
+                                   </a>
+                                   </div>
+           
+                                     <!-- Catalogo 04 -->
+                                   <div class="elec-item-v2" >
+                                       <div class="wrapper">
+                                           <a href="./templates/detail-elec.html"> 
+                                           <img src="./static/img/hela-1.png" alt="" class="elec-item-img-v2">
+                                       </div>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Heladeras</p>
+                                       </div>
+                                   </a>
+                                   </div>
+           
+                                    <!-- Catalogo 05 -->
+                                   <div class="elec-item-v2" >
+                                       <div class="wrapper">
+                                           <a href="./templates/detail-elec.html"> 
+                                           <img src="./static/img/lava-1.png" alt="" class="elec-item-img-v2">
+                                       </div>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Lavarropas</p>
+                                       </div>
+                                   </a>
+                                   </div>
+           
+                                    <!-- Catalogo 06 -->
+                                   <div class="elec-item-v2" >
+                                       <div class="wrapper">
+                                           <a href="./templates/detail-elec.html"> 
+                                           <img src="./static/img/moni2.png" alt="" class="elec-item-img-v2">
+                                       </div>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Monitores</p>
+                                       </div>
+                                   </a>
+                                   </div>
+           
+                                   <!-- Catalogo 07 -->
+                                   <div class="elec-item-v2" >
+                                       <div class="wrapper">
+                                           <a href="./templates/detail-elec.html"> 
+                                           <img src="./static/img/note-1.png" alt="" class="elec-item-img-v2">
+                                       </div>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Notebooks</p>
+                                       </div>
+                                   </a>
+                                   </div>
+           
+                                    <!-- Catalogo 08 -->
+                                   <div class="elec-item-v2" >
+                                       <div class="wrapper">
+                                           <a href="./templates/detail-elec.html"> 
+                                           <img src="./static/img/smart-1.png" alt="" class="elec-item-img-v2">
+                                       </div>
+                                   </a>
+                                       <div class="elec-item-detail-v2">
+                                           <p class="elec-item-detail-title-v2">Smart Watch</p>
+                                       </div>
+          
+            </div>
+            
+        </section>
+
+        
+    </div>
+    <section>
+    
+    </div>
+    
+                    </div>
+
+                        
+    
+                </div>
+                
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Ayuda</a>
+    </footer>
+
 </body>
+
 </html>
