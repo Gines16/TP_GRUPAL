@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="./utils/resets.css">
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
     <title>CompuCodo</title>
@@ -20,182 +21,135 @@
 
     <!-- Encabezado -->
     <header class="header">
-
         <nav>
             <!-- Logo -->
-            <div id="logo">
-                <a href=".">
-                
-            
-                    
-                    <img src="/static/img/compu1.png" width="55px" height="40px" ><span class="logo-text"></span>
-                </a>
-                
+            <a href="#" class="logo-link">
+                <img class="logo-image"src="/static/img/compu1.png" width="55px" height="40px" alt="Logo de CompuCodo" >
+                <span class="logo-text">CompuCodo</span>
+            </a>
+
+            <form id="search" class="nav-form-search">
+                <input type="text" class="input-search" placeholder="Buscar...">
+            </form>
+
+            <button type="button" class="hamburger-menu-btn">  
+                <i class="fas fa-solid fa-bars fa-lg"></i>
+            </button>
+            <!-- hipervínculos del menú -->
+            <div class="mobile-menu">
+                <button type="button" class="close-mobile-menu-btn">
+                    <i class="fas fa-solid fa-x fa-lg">❌</i>
+                </button>
+                <ul class="mobile-links-list">
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="#">Mis compras</a>
+                    </li>
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="#">Registrarse</a>
+                    </li>
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="#">Iniciar sesión</a>
+                    </li>
+                </ul>
             </div>
 
-            <section id="search" class="container">
-                <input type="text" class="input-search" placeholder="Buscar...">
-            </section>
-            <!-- hipervínculos del menú -->
-            <ul class="nav-links">
-                <li><a href="#popular">Mis Compras</a></li>
-                <li><a href="./templates/register.html" class="btn-cac">Registrarse</a></li>
-                <li>
-                    <a href="./templates/login.html">
-                        <i class="fas fa-sign-in-alt"></i>
-                        <span class="login-text">Iniciar Sesión</span>
-                        
-                    </a>
-                </li>
-            </ul>
+            <div class="desktop-menu">
+                <ul class="desktop-links-list">
+                    <li class="desktop-link-item">
+                        <a class="desktop-link" href="#popular">Mis Compras</a>
+                    </li>
+                    <li class="desktop-link-item">
+                        <a class="desktop-link" href="./templates/register.html" class="btn-cac">Registrarse</a>
+                    </li>
+                    <li class="desktop-link-item"> 
+                        <a class="desktop-link" href="./templates/login.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="login-text">Iniciar Sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
     </header>
 
     <!-- Contenido -->
-    <main>
-
-        
+    <main>      
+        <div class="card-banner"> 
+            <h1 class="card-banner-title">Encontrá lo que estás buscando</h1>
             
-            <div class="card-banner container"> <h1>Encontrá lo que estás buscando</h1>
-                
-                <video src="./static/img/compuc1.mp4" autoplay muted loop>    
-                    
-                </video> 
-                <section id="banner" class="d-flex">
-                    <section id="top-rated">
-        
-                        <!-- División contenedora del titulo
-                           e imagenes -->
-                           <div class="container">
-                           
-                               
-                               <div id="list-top-rated" class="elec-scroller">
-                               
-                                   
-                                   <!-- Catalogo 01 -->
-                                   <div class="elec-item-v2" > 
-                                       <div class="wrapper"> 
-                                           <a href="./templates/detail-elec.html">
-                                           <img src="./static/img/tv-1.png" alt="" class="elec-item-img-v2">
-                                           
-                                       </div>
-                                   </a>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Televisores</p>
-                                           
-                                       </div>
-                                   </div>
-           
-                                  <!-- Catalogo 02 -->
-                                   <div class="elec-item-v2" >
-                                       <div class="wrapper">
-                                           <a href="./templates/detail-elec.html">
-                                           <img src="./static/img/cel-1.png" alt="" class="elec-item-img-v2">
-                                       </div>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Celulares</p>
-                                       </div>
-                                   </a>
-                                   </div>
-           
-                                   <!-- Catalogo 03 -->
-                                   <div class="elec-item-v2" >
-                                       <div class="wrapper">
-                                           <a href="./templates/detail-elec.html">
-                                           <img src="./static/img/cocina-1.png" alt="" class="elec-item-img-v2">
-                                       </div>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Cocinas eléctricas</p>                                 
-                                       </div>
-                                   </a>
-                                   </div>
-           
-                                     <!-- Catalogo 04 -->
-                                   <div class="elec-item-v2" >
-                                       <div class="wrapper">
-                                           <a href="./templates/detail-elec.html"> 
-                                           <img src="./static/img/hela-1.png" alt="" class="elec-item-img-v2">
-                                       </div>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Heladeras</p>
-                                       </div>
-                                   </a>
-                                   </div>
-           
-                                    <!-- Catalogo 05 -->
-                                   <div class="elec-item-v2" >
-                                       <div class="wrapper">
-                                           <a href="./templates/detail-elec.html"> 
-                                           <img src="./static/img/lava-1.png" alt="" class="elec-item-img-v2">
-                                       </div>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Lavarropas</p>
-                                       </div>
-                                   </a>
-                                   </div>
-           
-                                    <!-- Catalogo 06 -->
-                                   <div class="elec-item-v2" >
-                                       <div class="wrapper">
-                                           <a href="./templates/detail-elec.html"> 
-                                           <img src="./static/img/moni2.png" alt="" class="elec-item-img-v2">
-                                       </div>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Monitores</p>
-                                       </div>
-                                   </a>
-                                   </div>
-           
-                                   <!-- Catalogo 07 -->
-                                   <div class="elec-item-v2" >
-                                       <div class="wrapper">
-                                           <a href="./templates/detail-elec.html"> 
-                                           <img src="./static/img/note-1.png" alt="" class="elec-item-img-v2">
-                                       </div>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Notebooks</p>
-                                       </div>
-                                   </a>
-                                   </div>
-           
-                                    <!-- Catalogo 08 -->
-                                   <div class="elec-item-v2" >
-                                       <div class="wrapper">
-                                           <a href="./templates/detail-elec.html"> 
-                                           <img src="./static/img/smart-1.png" alt="" class="elec-item-img-v2">
-                                       </div>
-                                   </a>
-                                       <div class="elec-item-detail-v2">
-                                           <p class="elec-item-detail-title-v2">Smart Watch</p>
-                                       </div>
-          
-            </div>
+            <video class="card-banner-video" src="./static/img/compuc1.mp4" autoplay muted loop></video> 
             
-        </section>
-
-        
-    </div>
-    <section>
-    
-    </div>
-    
-                    </div>
-
-                        
-    
-                </div>
+            <ul class="random-movies-list">
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/cel-1.png" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/cocina-1.png" alt="">
+                    </a>
+                </li>
                 
-
-        </section>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/hela-1.png" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/lava-1.png" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/moni2.png" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/note-1.png" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/smart-1.png" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="./static/img/tv-1.png" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="https://placehold.co/200x300" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="https://placehold.co/200x300" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="https://placehold.co/200x300" alt="">
+                    </a>
+                </li>
+                <li class="random-movie-item">
+                    <a href="#">
+                        <img class="random-movie-item-image" width="200" height="300" src="https://placehold.co/200x300" alt="">
+                    </a>
+                </li>                 
+            </section>
+        </div>
     </main>
 
-    <footer id="footer">
+    <footer class="footer">
         <a href="">Términos y condiciones</a>
         <a href="">Preguntas Frecuentes</a>
         <a href="">Ayuda</a>
     </footer>
-
 </body>
 
 </html>
