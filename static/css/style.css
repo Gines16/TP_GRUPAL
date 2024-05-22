@@ -28,7 +28,6 @@
     font-size: 3vw;
 }
 
-
 body{
     background-color: var(--bg-color);
     font-family: 'Nunito', sans-serif;
@@ -47,6 +46,7 @@ body{
     gap: .5rem;
     position: relative;
 }
+
 
 .desktop-link{
     font: normal normal 600 1.2rem 'Nunito', sans-serif;
@@ -199,6 +199,11 @@ body{
  ::-webkit-scrollbar-thumb:hover {
     background: var(--third-bis-color); 
 }
+
+.links_footer {
+    color: rgb(220, 223, 224);
+}
+
 
 
 @media (width >= 768px) {

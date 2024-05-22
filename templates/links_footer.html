@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="../utils/resets.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <title>CompuCodo</title>
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- vinculación fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <nav>
+            <!-- Logo -->
+            <a href="#" class="logo-link">
+                <img class="logo-image"src="/static/img/compu1.png" width="55px" height="40px" alt="Logo de CompuCodo" >
+                <span class="logo-text">CompuCodo</span>
+            </a>
+
+            <form id="search" class="nav-form-search">
+                <input type="text" class="input-search" placeholder="Buscar...">
+            </form>
+
+            <button type="button" class="hamburger-menu-btn">  
+                <i class="fas fa-solid fa-bars fa-lg"></i>
+            </button>
+            <!-- hipervínculos del menú -->
+            <div class="mobile-menu">
+                <button type="button" class="close-mobile-menu-btn">
+                    <i class="fas fa-solid fa-x fa-lg">❌</i>
+                </button>
+                <ul class="mobile-links-list">
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="#">Mis compras</a>
+                    </li>
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="register.html">Registrarse</a>
+                    </li>
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="login.html">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="desktop-menu">
+                <ul class="desktop-links-list">
+                    <li class="desktop-link-item">
+                        <a class="desktop-link" href="#popular">Mis Compras</a>
+                    </li>
+                    <li class="desktop-link-item">
+                        <a class="desktop-link" href="register.html" class="btn-cac">Registrarse</a>
+                    </li>
+                    <li class="desktop-link-item"> 
+                        <a class="desktop-link" href="login.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="login-text">Iniciar Sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <h2 class="links_footer">Preguntas Frecuentes</h2>
+    <p class="links_footer">¿Solo tienen estos productos? Tenemos una amplia variedad de productos disponibles, pero si no encuentra lo que busca en la pagina puede escribirnos a nuestro correo de contacto para ser asesorada</p>
+    <p class="links_footer">¿Que hago si compre un producto y me arrepenti? Lo sentimos, la empresa no se reesposabiliza de sus errores</p>
+    <p class="links_footer">¿Son los mejores precios del mercado? Efectivamente, fuimos elegidos 4 años consecutivos como la empresa con mejor relacion precio-calidad del mercado.</p>
+    <br>
+    <h2 class="links_footer">Contactanos</h2>
+    <p class="links_footer">Si queres comunicarte con nosotros para informar de un problema o por negocios, podes hacerlo al mail compucodo.contacto@gmail.com ,  o podes encontrarnos en instagram y facebook como compu_codo    </p>
+    <p class="links_footer">Si lo que buscaba era hablar con una persona lamentamos informarle que aun no contamos con servicio de call-center</p>
+    <br>
+    <h2 class="links_footer">Terminos y Condiciones</h2>
+    <p class="links_footer">La empresa no se reesposabiliza por errores a la hora de comprar, no hay reembolsos, garantias ni devoluciones. Al permanecer en la pagina usted tambien acepta que todos sus datos sean recopilados y vendidos a tercero    s</p>
+    <br>
+</main>
+
+    <footer class="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Contactanos</a>
+    </footer>
+</body>
+
+<script src="./logic/index.js"></script>
+</html>
