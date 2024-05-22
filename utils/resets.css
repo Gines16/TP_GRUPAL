@@ -8,10 +8,6 @@
     --third-color:#416cad4d;
     --third-bis-color:#8151be98;
     --bg-input-color:#4f31572c;
-
-    /* --purple: #6f05c1;
-    --gold: #fbcb00;
-    --white: #ffffff; */
 }
 
 
@@ -48,6 +44,8 @@ input, button{
     outline: none;
     background-color: transparent;
 }
+
+button{ cursor: pointer;}
 
 ul,ol { 
     list-style-type: none;
