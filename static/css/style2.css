@@ -124,11 +124,11 @@ text-align: center;
 
 .controls {
   width: 100%;
-  background: #24303c;
+  background: #dfdddd;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid #8151be98;
   font-family: 'calibri';
   font-size: 18px;
   color: rgb(20, 103, 226);
@@ -167,7 +167,7 @@ text-align: center;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid #c51fc5;
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
   color: white;
