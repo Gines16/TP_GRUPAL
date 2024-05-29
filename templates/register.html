@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- vinculación con estilos y favicon -->
-    <link rel="stylesheet" href="../static/css/style2.css">
+    <link rel="stylesheet" href="../static/css/register.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
-    
+    <link rel="stylesheet" href="../../utils/resets.css">
     <!-- vinculación con google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <!-- vinculación fontawesome -->
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-    <title>CompuCodo</title>
+    <title>CompuCodo | Registrate</title>
     </head>
 
     <body>
@@ -21,20 +21,57 @@
     
     <!-- Encabezado -->
     <header class="header">
-
-        <nav>
-            <!-- Logo -->
-            <div id="logo">
-                <a href="/index.html">
-                  
-                    <img src="/static/img/compu1.png" width="55px" height="40px" ><span class="logo-text"></span>
-                 
+      
+        <header class="header">
+            <nav>
+                <!-- Logo -->
+                <a href="../../index.html" class="logo-link">
+                    <img class="logo-image"src="/static/img/compu1.png" width="55px" height="40px" alt="Logo de CompuCodo" >
+                    <span class="logo-text">CompuCodo</span>
                 </a>
-            </div>
-
-            <!-- hipervínculos del menú -->
-            
-        </nav>
+    
+                <form id="search" class="nav-form-search">
+                    <input type="text" class="input-search" placeholder="Buscar...">
+                </form>
+    
+                <button type="button" class="hamburger-menu-btn">  
+                    <i class="fas fa-solid fa-bars fa-lg"></i>
+                </button>
+                <!-- hipervínculos del menú -->
+                <div class="mobile-menu">
+                    <button type="button" class="close-mobile-menu-btn">
+                        <i class="fas fa-solid fa-x fa-lg">❌</i>
+                    </button>
+                    <ul class="mobile-links-list">
+                        <li class="mobile-link-item">
+                            <a class="mobile-link" href="./carrito.html">Mis compras</a>
+                        </li>
+                        <li class="mobile-link-item">
+                            <a class="mobile-link" href="./register.html">Registrarse</a>
+                        </li>
+                        <li class="mobile-link-item">
+                            <a class="mobile-link" href="./login.html">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="desktop-menu">
+                    <ul class="desktop-links-list">
+                        <li class="desktop-link-item">
+                            <a class="desktop-link" href="./carrito.html">Mis Compras</a>
+                        </li>
+                        <li class="desktop-link-item">
+                            <a class="desktop-link" href="./register.html" class="btn-cac">Registrarse</a>
+                        </li>
+                        <li class="desktop-link-item"> 
+                            <a class="desktop-link" href="./login.html">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span class="login-text">Iniciar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
     </header>
 
@@ -77,14 +114,17 @@
 
             </form>
         </section>
-
+      
     </main>
-    
-    <footer id="footer">
-        <a href="./templates/links_footer.html">Términos y condiciones</a> &nbsp;
-        <a href="./templates/links_footer.html">Preguntas Frecuentes</a>   &nbsp;
-        <a href="./templates/links_footer.html">Contactanos</a> &nbsp;
+  
+    <footer class="footer">
+        <a href="../templates/links_footer.html">Términos y condiciones</a>
+        <a href="../templates/links_footer.html">Preguntas Frecuentes</a>
+        <a href="../templates/links_footer.html">Contactanos</a>
     </footer>
-    
 </body>
+
+<script src="../../logic/index.js"></script>
+
 </html>
+    
