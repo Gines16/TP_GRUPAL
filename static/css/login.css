@@ -1,116 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .logo{
-    font-weight: bold;
-   
+
+body {
+  background-image: url("/static/img/bg-4.png");
 }
 
-#logo a{
+#form-wrapper{
+  padding: 5rem 1rem;
+  height: 75vh;
+}
+
+#form-login {
+  margin: 0 auto;
+  width: clamp(350px, 80vw, 550px);
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: "Nunito", sans-serif;
   color: white;
-  text-decoration: none;
-  font-size: 30px;
-  margin-left: auto;
-  font-family: 'Nunito', sans-serif;
+  box-shadow: 7px 13px 37px #823cf3;
+  font-size: 35px;
 }
 
-#logo:hover {
-  animation: tilt-n-move-shaking 0.25s infinite;
-}
-
-.header, .header nav {
+.form-registrer b {
   width: 100%;
-  background-image: linear-gradient(to bottom, var(--bg-color), rgba(255,0,0,0));
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.form-register p {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: white;
 }
 
-.header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  gap: .5rem;
-  position: relative;
+.form-help p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
 }
-         body {
-        background-image: url("/static/img/bg-4.png");
-        background-size:cover;
-        
 
-  }
- 
-  .form-register {
-    width: 550px;
-    background: #24303c;
-    padding: 10px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'Nunito', sans-serif;
-    color: white;
-    box-shadow: 7px 13px 37px #823cf3;
-    font-size: 35px;
-    margin-bottom: 10px;
-    
-  }
-  
-  .form-registrer b{
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    color: white;
-  }
-  .form-register p{
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    color: white;
-
-  }
-  
-  .form-help p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .form-register a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  }
-  
-  .form-register a:hover {
-    color: #1717FF;
-    cursor: pointer;
-  }
-  
-  .form-register .botons {
-    width: 100%;
-    background: #9b37d488;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-    font-family: 'Nunito', sans-serif;
-  }
-.form-register h4{
-text-align: center;
-
-
+.form-register a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-.terms{
+
+.form-register a:hover {
+  color: #1717ff;
+  cursor: pointer;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #9b37d488;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+.form-register h4 {
+  text-align: center;
+}
+.terms {
   background-color: bisque;
   text-align: right;
   padding: 12px;
@@ -123,7 +84,7 @@ text-align: center;
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #8151be98;
-  font-family: 'calibri';
+  font-family: "calibri";
   font-size: 18px;
   color: rgb(92, 92, 92);
 }
@@ -134,7 +95,7 @@ text-align: center;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  font-family: 'calibri';
+  font-family: "calibri";
   font-size: 18px;
   color: rgba(248, 248, 248, 0.932);
   text-align: center;
@@ -147,7 +108,7 @@ text-align: center;
   margin: auto;
   margin-top: 10px;
   border-radius: 4px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-size: 15px;
   margin-bottom: 10px;
@@ -155,18 +116,19 @@ text-align: center;
   border: 1px solid #1f53c5;
 }
 
-.form-select b{
+.form-select b {
   width: 100%;
   background: #24303c;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #c51fc5;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   color: white;
- 
 }
+<<<<<<< HEAD
+=======
 
 .logo-link{
   font-weight: bold;
@@ -456,3 +418,4 @@ body{
 
 
 }
+>>>>>>> e7fe3e5a55b02707205ef6d75ab89913589f60ce
