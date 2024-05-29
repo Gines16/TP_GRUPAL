@@ -36,6 +36,7 @@
 }
          body {
         background-image: url("/static/img/bg-4.png");
+        background-size: cover;
 
   }
  
@@ -391,4 +392,75 @@ body{
   padding: .5rem 1rem;
   height: 8vh;
   width: 40vw;
+}
+
+ @media (width <= 768px) {
+  
+  .form-register {
+    width: 300px;
+    background: #24303c;
+    padding: 10px;
+    margin: left;
+    margin-top: 40px;
+    border-radius: 4px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #823cf3;
+    font-size: 35px;
+    margin-bottom: 50px;
+    
+  }
+  
+
+  .form-register p{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+
+  }
+  
+  .form-help p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: #1717FF;
+    cursor: pointer;
+  }
+  
+  .form-register .botons {
+    width: 40%;
+    background: #9b37d488;
+    border: none;
+   float:left
+  }
+
+  .terms{
+    background-color: bisque;
+    margin-top: 50%;
+   
+  }
+
+  .form-control {
+    width: 50%;
+    background: #24303c;
+    border-radius: 4px;
+   
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgba(248, 248, 248, 0.932);
+    text-align: center;
+  }
 }
