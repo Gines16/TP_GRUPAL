@@ -21,6 +21,7 @@
 }
 
 body {
+    font-family: "Nunito", sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -63,4 +64,25 @@ header {
     position: sticky;
     top: 0;
     z-index: 9;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg-input-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--third-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--third-bis-color);
 }

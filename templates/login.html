@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="../utils/resets.css">
     <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/layout-1.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../utils/resets.css">
     <!-- vinculación con google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,98 +15,75 @@
     <!-- vinculación fontawesome -->
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <title>CompuCodo | Iniciar Sesión</title>
-    </head>
+</head>
 
-    <body>
+<body>
         
-    
-    <!-- Encabezado -->
+    <!-- Encabezado -->      
     <header class="header">
-      
-        <header class="header">
-            <nav>
-                <!-- Logo -->
-                <a href="../../index.html" class="logo-link">
-                    <img class="logo-image"src="/static/img/compu1.png" width="55px" height="40px" alt="Logo de CompuCodo" >
-                    <span class="logo-text">CompuCodo</span>
-                </a>
-    
-                <form id="search" class="nav-form-search">
-                    <input type="text" class="input-search" placeholder="Buscar...">
-                </form>
-    
-                <button type="button" class="hamburger-menu-btn">  
-                    <i class="fas fa-solid fa-bars fa-lg"></i>
-                </button>
-                <!-- hipervínculos del menú -->
-                <div class="mobile-menu">
-                    <button type="button" class="close-mobile-menu-btn">
-                        <i class="fas fa-solid fa-x fa-lg">❌</i>
-                    </button>
-                    <ul class="mobile-links-list">
-                        <li class="mobile-link-item">
-                            <a class="mobile-link" href="./carrito.html">Mis compras</a>
-                        </li>
-                        <li class="mobile-link-item">
-                            <a class="mobile-link" href="./register.html">Registrarse</a>
-                        </li>
-                        <li class="mobile-link-item">
-                            <a class="mobile-link" href="./login.html">Iniciar sesión</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="desktop-menu">
-                    <ul class="desktop-links-list">
-                        <li class="desktop-link-item">
-                            <a class="desktop-link" href="./carrito.html">Mis Compras</a>
-                        </li>
-                        <li class="desktop-link-item">
-                            <a class="desktop-link" href="./register.html" class="btn-cac">Registrarse</a>
-                        </li>
-                        <li class="desktop-link-item"> 
-                            <a class="desktop-link" href="./login.html">
-                                <i class="fas fa-sign-in-alt"></i>
-                                <span class="login-text">Iniciar Sesión</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <nav>
+            <!-- Logo -->
+            <a href="../../index.html" class="logo-link">
+                <img class="logo-image"src="/static/img/compu1.png" width="55px" height="40px" alt="Logo de CompuCodo" >
+                <span class="logo-text">CompuCodo</span>
+            </a>
 
+            <form id="search" class="nav-form-search">
+                <input type="text" class="input-search" placeholder="Buscar...">
+            </form>
+
+            <button type="button" class="hamburger-menu-btn">  
+                <i class="fas fa-solid fa-bars fa-lg"></i>
+            </button>
+            <!-- hipervínculos del menú -->
+            <div class="mobile-menu">
+                <button type="button" class="close-mobile-menu-btn">
+                    <i class="fas fa-solid fa-x fa-lg">❌</i>
+                </button>
+                <ul class="mobile-links-list">
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="./carrito.html">Mis compras</a>
+                    </li>
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="./register.html">Registrarse</a>
+                    </li>
+                    <li class="mobile-link-item">
+                        <a class="mobile-link" href="./login.html">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="desktop-menu">
+                <ul class="desktop-links-list">
+                    <li class="desktop-link-item">
+                        <a class="desktop-link" href="./carrito.html">Mis Compras</a>
+                    </li>
+                    <li class="desktop-link-item">
+                        <a class="desktop-link" href="./register.html" class="btn-cac">Registrarse</a>
+                    </li>
+                    <li class="desktop-link-item"> 
+                        <a class="desktop-link" href="./login.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="login-text">Iniciar Sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
 
     <!-- Contenido -->
     <main>
-
-        <!-- form-wrapper: formulario -->
         <section id="form-wrapper">
-           
-           
-                <section id="form-wrapper">
-           
-                    
-                        <section class="form-register">
-                          <h4>Iniciar Sesion</h4>
-                          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-                          <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-                          <input class="botons" type="submit" value="Registrarse">
-                          <p><a href="#">Olvidé mi usuario/clave</a></p>
-                        
-                          
-                        </section>
-                      
-                     
-        
-                    </form>
-                </section>
-              
-             
-
+            <form id="form-login">
+                <h4>Iniciar Sesion</h4>
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+                <input class="botons" type="submit" value="Registrarse">
+                <p><a href="#">Olvidé mi usuario/clave</a></p>
             </form>
         </section>
-      
     </main>
   
     <footer class="footer">
@@ -115,7 +93,6 @@
     </footer>
 </body>
 
-<script src="../../logic/index.js"></script>
-
+<script src="../logic/index.js"></script>
 </html>
     

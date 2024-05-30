@@ -1,0 +1,149 @@
+.header, .header nav {
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--bg-color), rgba(255,0,0,0));
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: .5rem;
+    position: relative;
+}
+
+.logo-link {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    & .logo-text {
+      color: var(--secondary-color);
+    }
+  }
+  
+  .logo-link:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+  }
+
+
+.desktop-link{
+    font: normal normal 600 1.2rem 'Nunito', sans-serif;
+}
+.desktop-link:hover{
+    color: var(--third-bis-color);
+}
+
+.nav-form-search{}
+
+.hamburger-menu-btn{
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.input-search {
+    background-color: #dfdddd;
+    border: 2px solid rgba(158, 52, 172, 0.534);
+    border-radius: 25px;
+    outline: none;
+    color: var(--bg-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    padding: .5rem 1rem;
+    height: 8vh;
+    width: 40vw;
+}
+
+.desktop-menu{
+    display: none;
+}
+
+.mobile-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 1rem;
+    background-color: var(--third-bis-color);
+    flex-direction: column;
+    align-items: end;
+    display: none;
+}
+
+
+.mobile-menu_open{
+    display: flex;
+}
+
+
+.close-mobile-menu-btn{
+    font-size: 1.5rem;
+}
+
+
+.mobile-links-list{
+    padding: 5rem 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.mobile-link-item{
+    text-align: end;
+}
+.mobile-link{
+    font: normal normal 700 1.5rem Tahoma;
+}
+
+.footer{
+    background-color: var(--third-bis-color);
+    color: var(--secondary-color);
+    font: normal normal 600 1.2rem 'Nunito', sans-serif;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer a:hover {
+    color: var(--bg-color);
+}
+
+.links_footer {
+    color: rgb(220, 223, 224);
+}
+
+
+
+@media (width >= 768px) {
+    .hamburger-menu-btn{
+        display: none;
+    }
+    
+    .desktop-menu{
+        display: block;
+    }
+    .desktop-links-list{
+        display: flex;
+        gap: .5rem;
+        font: normal normal 600 1rem 'Nunito', sans-serif;
+        color: var(--secondary-color);
+    }
+    .desktop-link-item{}
+    .desktop-link{}
+}
+
+
+/* ANIMATIONS */
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
