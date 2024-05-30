@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="../static/css/register.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../utils/resets.css">
-    <link rel="stylesheet" href="../static/css/register.css">
     <link rel="stylesheet" href="../static/css/layout-1.css">
     <!-- vinculación con google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,60 +15,65 @@
     <!-- vinculación fontawesome -->
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <title>CompuCodo | Registrate</title>
-</head>
+    </head>
 
-<body>
+    <body>
+        
+    
     <!-- Encabezado -->
     <header class="header">
-        <nav>
-            <!-- Logo -->
-            <a href="../../index.html" class="logo-link">
-                <img class="logo-image"src="/static/img/compu1.png" width="55px" height="40px" alt="Logo de CompuCodo" >
-                <span class="logo-text">CompuCodo</span>
-            </a>
-
-            <form id="search" class="nav-form-search">
-                <input type="text" class="input-search" placeholder="Buscar...">
-            </form>
-
-            <button type="button" class="hamburger-menu-btn">  
-                <i class="fas fa-solid fa-bars fa-lg"></i>
-            </button>
-            <!-- hipervínculos del menú -->
-            <div class="mobile-menu">
-                <button type="button" class="close-mobile-menu-btn">
-                    <i class="fas fa-solid fa-x fa-lg">❌</i>
+      
+        <header class="header">
+            <nav>
+                <!-- Logo -->
+                <a href="../../index.html" class="logo-link">
+                    <img class="logo-image"src="/static/img/compu1.png" width="55px" height="40px" alt="Logo de CompuCodo" >
+                    <span class="logo-text">CompuCodo</span>
+                </a>
+    
+                <form id="search" class="nav-form-search">
+                    <input type="text" class="input-search" placeholder="Buscar...">
+                </form>
+    
+                <button type="button" class="hamburger-menu-btn">  
+                    <i class="fas fa-solid fa-bars fa-lg"></i>
                 </button>
-                <ul class="mobile-links-list">
-                    <li class="mobile-link-item">
-                        <a class="mobile-link" href="./carrito.html">Mis compras</a>
-                    </li>
-                    <li class="mobile-link-item">
-                        <a class="mobile-link" href="./register.html">Registrarse</a>
-                    </li>
-                    <li class="mobile-link-item">
-                        <a class="mobile-link" href="./login.html">Iniciar sesión</a>
-                    </li>
-                </ul>
-            </div>
+                <!-- hipervínculos del menú -->
+                <div class="mobile-menu">
+                    <button type="button" class="close-mobile-menu-btn">
+                        <i class="fas fa-solid fa-x fa-lg">❌</i>
+                    </button>
+                    <ul class="mobile-links-list">
+                        <li class="mobile-link-item">
+                            <a class="mobile-link" href="./carrito.html">Mis compras</a>
+                        </li>
+                        <li class="mobile-link-item">
+                            <a class="mobile-link" href="./register.html">Registrarse</a>
+                        </li>
+                        <li class="mobile-link-item">
+                            <a class="mobile-link" href="./login.html">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="desktop-menu">
+                    <ul class="desktop-links-list">
+                        <li class="desktop-link-item">
+                            <a class="desktop-link" href="./carrito.html">Mis Compras</a>
+                        </li>
+                        <li class="desktop-link-item">
+                            <a class="desktop-link" href="./register.html" class="btn-cac">Registrarse</a>
+                        </li>
+                        <li class="desktop-link-item"> 
+                            <a class="desktop-link" href="./login.html">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span class="login-text">Iniciar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-            <div class="desktop-menu">
-                <ul class="desktop-links-list">
-                    <li class="desktop-link-item">
-                        <a class="desktop-link" href="./carrito.html">Mis Compras</a>
-                    </li>
-                    <li class="desktop-link-item">
-                        <a class="desktop-link" href="./register.html" class="btn-cac">Registrarse</a>
-                    </li>
-                    <li class="desktop-link-item"> 
-                        <a class="desktop-link" href="./login.html">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <span class="login-text">Iniciar Sesión</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
 
@@ -76,33 +81,36 @@
     <main>
 
         <!-- form-wrapper: formulario -->
-        <section class="form-wrapper">
-            <form class="form-register">
-                <h4>Crear usuario</h4>
-
-                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-                <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-                <!-- <div class="form-control"> -->
-
-                <select name="country" id="country" class="form-select">
-                    <option value="">País</option>
-                    <option value="AR">Argentina</option>
-                    <option value="BO">Bolivia</option>
-                    <option value="BR">Brasil</option>
-                    <option value="CH">Chile</option>
-                    <option value="CO">Colombia</option>
-                    <option value="EC">Ecuador</option>
-                    <option value="PY">Paraguay</option>
-                    <option value="PE">Perú</option>
-                    <option value="UY">Uruguay</option>
-                    <option value="VE">Venezuela</option>
-                    &nbsp;
-                    <input type="checkbox" id="terms"> &nbsp; &nbsp; <label for="terms">Acepto términos y condiciones</label>
-                </select>
-
-                <input class="botons" type="submit" value="Registrarse">   
+        <section id="form-wrapper">
+           
+           
+                <section class="form-register">
+                  <h4>Crear usuario</h4>
+                  <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                  <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                  <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                  <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+                  <div class="form-control">
+                    <select name="country" id="country" class="form-select">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                     
+                </section>
+                <input class="botons" type="submit" value="Registrarse"> 
+                <input type="checkbox" id="terms"> 
+                <label for="terms">Acepto términos y condiciones</label>
+                
+             </select>
+                      
             </form>
            
         </section>
@@ -119,4 +127,3 @@
 <script src="../../logic/index.js"></script>
 
 </html>
-    

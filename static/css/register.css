@@ -1,5 +1,6 @@
 body{
   background-image: url(../img/bg-4.png);
+  background-size:cover;
 }
 
 .form-wrapper{
@@ -8,7 +9,7 @@ body{
 
 .form-register {
   margin: 0 auto;
-  width: clamp(350px, 80vw, 500px);
+  width: clamp(250px, 50vw, 400px);
   background: #24303c;
   padding: 10px;
   border-radius: 4px;
