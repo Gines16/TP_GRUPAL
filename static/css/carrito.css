@@ -1,6 +1,8 @@
 
 body{
+    
     background-color: var(--bg-color);
+    background-image: url("../img/bg-5.png");
 }
 
 .carrito-container{
@@ -20,6 +22,7 @@ body{
 
 .principal-image-product{
     grid-area: principal-image-product;
+    
 }
 .principal-image-product__image{
     height: 250px;
@@ -33,12 +36,14 @@ body{
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
+    
 }
 .additionals-image-product__image{
     border-radius: 20px;
     height: 120px;
     width: 120px;
     object-fit: cover;
+   
 }
 .details-product{
     grid-area: details-product;
@@ -96,8 +101,21 @@ body{
     .principal-image-product{
         place-self: end center;
         width: 80%;
+        
     }
     .principal-image-product__image{
         border-radius: 20px;
     }
+}
+
+@media (width <= 768px) {
+
+    .principal-image-product{
+        box-shadow: 7px 13px 37px #823cf3;
+    }
+}
+
+.footer {
+    margin-top: 16px;
+
 }

@@ -45,14 +45,14 @@ position: relative;
   width: 450px;
   background: #24303c;
   padding: 10px;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 100px;
   border-radius: 4px;
   font-family: 'Nunito', sans-serif;
   color: white;
   box-shadow: 7px 13px 37px #823cf3;
   font-size: 35px;
-  margin-bottom: 50px;
+ 
   
 }
 
@@ -307,6 +307,7 @@ flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
 gap: 1rem;
+margin-top: 289px;
 }
 
 .footer a:hover {
