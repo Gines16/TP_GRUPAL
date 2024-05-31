@@ -114,12 +114,6 @@
     color: var(--bg-color);
 }
 
-.links_footer {
-    color: rgb(220, 223, 224);
-    
-
-}
-
 
 
 @media (width >= 768px) {

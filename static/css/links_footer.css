@@ -1,0 +1,22 @@
+html, body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links_footer {
+    color: rgb(220, 223, 224);
+    
+}
+
+main{
+height: 70vh;
+display: flex;
+flex-direction:column;
+justify-content: space-around;
+align-items:flex-start;
+flex-wrap: wrap;
+}
+
