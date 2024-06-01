@@ -82,16 +82,16 @@
 
         <!-- form-wrapper: formulario -->
         <section id="form-wrapper">
-           
-           
-                <section class="form-register">
-                  <h4>Crear usuario</h4>
-                  <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-                  <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-                  <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-                  <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-                  <div class="form-control">
-                    <select name="country" id="country" class="form-select">
+            <form class="form-register">
+                <h4>Crear usuario</h4>
+
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+
+                <div class="form-control">
+                    <select name="pais" id="pais" class="form-select">
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
                         <option value="BO">Bolivia</option>
@@ -103,18 +103,14 @@
                         <option value="PE">Perú</option>
                         <option value="UY">Uruguay</option>
                         <option value="VE">Venezuela</option>
-                     
-                </section>
+                    </select>
+                </div>
+
+                <input type="checkbox" id="terminos" name="terminos" > 
+                <label for="terminos">Acepto términos y condiciones</label>
                 <input class="botons" type="submit" value="Registrarse"> 
-                <input type="checkbox" id="terms"> 
-                <label for="terms">Acepto términos y condiciones</label>
-                
-             </select>
-                      
             </form>
-           
         </section>
-        
     </main>
   
     <footer class="footer">
@@ -125,5 +121,5 @@
 </body>
 
 <script src="../../logic/index.js"></script>
-
+<script src="../../logic/register.js"></script>
 </html>
