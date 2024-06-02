@@ -217,8 +217,6 @@ font: normal normal 600 1.2rem 'Nunito', sans-serif;
 color: var(--third-bis-color);
 }
 
-.nav-form-search{}
-
 .hamburger-menu-btn{
 background-color: transparent;
 color: var(--secondary-color);
@@ -350,8 +348,6 @@ background: var(--third-bis-color);
     font: normal normal 600 1rem 'Nunito', sans-serif;
     color: var(--secondary-color);
 }
-.desktop-link-item{}
-.desktop-link{}
 
 .carrito-container{
     grid-template-columns: 45% 45%;

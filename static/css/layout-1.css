@@ -35,8 +35,6 @@
     color: var(--third-bis-color);
 }
 
-.nav-form-search{}
-
 .hamburger-menu-btn{
     background-color: transparent;
     color: var(--secondary-color);
@@ -114,6 +112,11 @@
     color: var(--bg-color);
 }
 
+#logo-compucodo{
+    width: 55px;
+    height: 40px;
+}
+
 
 
 @media (width >= 768px) {
@@ -130,8 +133,6 @@
         font: normal normal 600 1rem 'Nunito', sans-serif;
         color: var(--secondary-color);
     }
-    .desktop-link-item{}
-    .desktop-link{}
 }
 
 
